@@ -44,7 +44,7 @@ def draw_frame(array, algo_name, active_indices=None, sorted_indices=None):
           f"{BOLD}Comparisons:{RESET} {current_stats.comparisons:<6} | "
           f"{BOLD}Swaps:{RESET} {current_stats.swaps:<6}")
     print("-" * 50)
-    
+     
     max_val = max(array) if array else 1
     for i, val in enumerate(array):
         bar_length = int((val / max_val) * 30) if max_val > 0 else 0
